@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomerInformRepository.Models
+namespace CustomerInformService.Models
 {
-    public class CustomerData
+    internal class CustomerModel
     {
         public Guid custid { get; set; }
         public string custnm { get; set; }

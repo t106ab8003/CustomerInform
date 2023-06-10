@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CustomerInformRepository
 {
-    internal interface ICustomerRepository
+    public interface ICustomerRepository
     {
         List<CustomerData> GetAll();
         bool Insert(CustomerData data);

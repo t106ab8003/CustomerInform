@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerInform", "CustomerI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerInformRepository", "CustomerInformRepository\CustomerInformRepository.csproj", "{2C810888-EBDC-426F-B1FB-FD43205E9853}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerInformService", "CustomerInformService\CustomerInformService.csproj", "{05B34AFF-7FF6-43EB-964D-225A427AC6AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2C810888-EBDC-426F-B1FB-FD43205E9853}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C810888-EBDC-426F-B1FB-FD43205E9853}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C810888-EBDC-426F-B1FB-FD43205E9853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B34AFF-7FF6-43EB-964D-225A427AC6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B34AFF-7FF6-43EB-964D-225A427AC6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B34AFF-7FF6-43EB-964D-225A427AC6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B34AFF-7FF6-43EB-964D-225A427AC6AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
