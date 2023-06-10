@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CustomerInformService
 {
-    internal interface ICustomerService
+    public interface ICustomerService
     {
         List<CustomerModel> GetAll();
         bool AddCustomer(CustomerModel model);

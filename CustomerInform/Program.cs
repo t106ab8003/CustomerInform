@@ -1,7 +1,18 @@
+using CustomerInformRepository;
+using CustomerInformRepository.EFDbContext;
+using CustomerInformService;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<CustomerInfoContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerInfo"));
+});
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();//同一個request就用同一個物件
+builder.Services.AddScoped<ICustomerService, CustomerService>();//同一個request就用同一個物件
 
 var app = builder.Build();
 

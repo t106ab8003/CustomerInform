@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CustomerInformRepository
 {
-    internal class CustomerRepository : ICustomerRepository
+    public class CustomerRepository : ICustomerRepository
     {
         private readonly CustomerInfoContext _CustomerInfoContext;
         public CustomerRepository(CustomerInfoContext customerInfoContext)

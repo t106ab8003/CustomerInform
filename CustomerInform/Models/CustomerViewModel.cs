@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CustomerInformService.Models
+﻿namespace CustomerInform.Models
 {
-    public class CustomerModel
+    public class CustomerViewModel
     {
         public Guid custid { get; set; }
         public string custnm { get; set; }

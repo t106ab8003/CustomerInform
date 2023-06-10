@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CustomerInformService
 {
-    internal class CustomerService : ICustomerService
+    public class CustomerService : ICustomerService
     {
         private readonly ICustomerRepository _CustomerRepository;
         public CustomerService(ICustomerRepository customerRepository)
@@ -39,7 +39,7 @@ namespace CustomerInformService
                 contactnum = x.contactnum,
                 perosnalid = x.perosnalid
             }).ToList();
-            return model; ;
+            return model; 
         }
     }
 }

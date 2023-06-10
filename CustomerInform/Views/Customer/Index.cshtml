@@ -1,0 +1,29 @@
+﻿@model List<CustomerViewModel> //這個view的model長成list的樣子
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4"></h1>
+    <p>You can check customers' records here :)</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Number</th>
+                <th scope="col">PersonalId</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) //<=Model是保留字
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.custnm)</td>
+                    <td>@Html.DisplayFor(modelItem => item.contactnum)</td>
+                    <td>@Html.DisplayFor(modelItem => item.perosnalid)</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
