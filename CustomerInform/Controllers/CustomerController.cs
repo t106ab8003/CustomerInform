@@ -1,5 +1,7 @@
 ﻿using CustomerInform.Models;
+using CustomerInformRepository.EFDbContext;
 using CustomerInformService;
+using CustomerInformService.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CustomerInform.Controllers
@@ -21,8 +23,25 @@ namespace CustomerInform.Controllers
                 custnm = x.custnm,
                 contactnum = x.contactnum,
                 perosnalid = x.perosnalid
-            }).ToList(); 
+            }).ToList();
             return View(model);
+        }
+
+        public IActionResult Create(CustomerViewModel customerViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var model = new CustomerModel
+                {
+                    custid = Guid.NewGuid(),
+                    contactnum = customerViewModel.contactnum,
+                    custnm = customerViewModel.custnm,
+                    perosnalid = customerViewModel.perosnalid
+                };
+                _CustomerService.AddCustomer(model);
+                ModelState.Clear();
+            }
+            return View();
         }
     }
 }

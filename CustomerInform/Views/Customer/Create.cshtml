@@ -1,0 +1,28 @@
+﻿@model CustomerViewModel
+
+<form asp-action="Create">
+    <div class="container">
+        <div class="input-group mb-3">
+            <span class="input-group-text">姓名</span>
+            <input asp-for="custnm" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="input-group mb-3">
+            <span class="input-group-text">電話</span>
+            <input asp-for="contactnum" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="input-group mb-3">
+            <span class="input-group-text">ID </span>
+            <input asp-for="perosnalid" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+    </div>
+
+    <div class="container">
+        <input type="submit" value="新增客戶" />
+    </div>
+</form>
